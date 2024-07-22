@@ -1,0 +1,99 @@
+<div class = "row text-center" >
+  <p>pipe works!</p>
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{firstName}}
+    </div>
+    <div class ="col-3">
+      after pipe value - {{firstName | uppercase}}
+  </div>
+  <br>
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{firstName}}
+    </div>
+    <div class ="col-3">
+      after pipe value - {{firstName | lowercase}}
+  </div>
+<br>
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{firstName}}
+    </div>
+    <div class ="col-3">
+      after pipe value - {{firstName | lowercase}}
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{example}}
+    </div>
+    <div class ="col-3">
+      after pipe value - {{example | titlecase}}
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{currentdate}}
+    </div>
+    <div class ="col-3">
+      date pipe value1 - {{currentdate | date}}<br>
+      date pipe value2 - {{currentdate | date : 'dd-mm-yy'}}<br>
+      date pipe value3 - {{currentdate | date : 'dd-mm-yyyy'}}<br>
+      date pipe value4 - {{currentdate | date : 'dd-mm-yyyy hh:mm:ss'}}<br>
+      date pipe value5 - {{currentdate | date : 'dd-MMM-yy'}}<br>
+      date pipe value5 - {{currentdate | date : 'dd/MMM/yy'}}<br>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{jsonObject}}
+    </div>
+    <div class ="col-3">
+      after pipe value - {{jsonObject | json}}
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{currentTime}}
+    </div>
+    <div class ="col-3">
+      <!-- Order of execution will be left to right -->
+      after pipe value - {{currentTime | async | date : 'hh:mm:ss'}}
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{currentTime}}
+    </div>
+    <div class ="col-3">
+      <!-- Order of execution will be left to right -->
+      after pipe value - {{currentTime | async | date : 'hh:mm:ss'}}
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{currentTime}}
+    </div>
+    <div class ="col-3">
+      <!-- Order of execution will be left to right -->
+      after pipe value - {{currentTime | async | date : 'hh:mm:ss'}}
+  </div>
+  <br>
+
+  <div class="row">
+    <div class ="col-3">
+      OrginalValue  - {{jsonObject.state}}
+    </div>
+    <div class ="col-3">
+      <!-- Order of execution will be left to right -->
+      after pipe value - {{jsonObject.state | newPipeExample}}
+  </div>
+  <br>
+</div>
